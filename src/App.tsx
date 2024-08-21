@@ -70,11 +70,11 @@ const App: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {activeUsers.map((User, index) => (
+            {activeUsers.map((user, index) => (
               <tr key={index}>
-                <td>{User.Name}</td>
-                <td>{User.Date}</td>
-                <td>{User['FavoriteMovie']}</td>
+                <td>{user.Name}</td>
+                <td>{user.Date}</td>
+                <td>{user['FavoriteMovie']}</td>
               </tr>
             ))}
           </tbody>
